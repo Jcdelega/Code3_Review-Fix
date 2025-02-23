@@ -4,21 +4,33 @@ input {
   font-size: 18px;
 }
 
-#lista-de-productos {
-  display: flex
+#listaProductos {
+  display: flex;
 }
-
+.wrapper{                           /* This class is added */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section{                             /* This class is added */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .producto {
+  background-color: bisque;        /* This style is added */
   width: 200px;
   height: 200px;
   margin: 10px;
   border: 2px solid black;
+  border-radius: 20%;                 /* This style is added */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .producto img {
+  border-radius: 20%;                 /*This style is added*/
   width: 70%;
   height: auto
 }

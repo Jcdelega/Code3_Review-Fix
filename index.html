@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <input type="text" placeholder="Selecciona un color o tipo" />              <!-- A special character was removed -->
-      <button>Filtrar</button>
-      <h1>Lista de productos</h1>
-      <div id="lista-de-productos">
+    <main class="wrapper" >                                                       <!-- Some semantic tags were added -->
+      <header>
+        <input type="text" placeholder="Selecciona un color o tipo" />             <!-- A special character was removed -->
+        <button>Filtrar</button>
+      </header>   
+      <section>
+        <h1>Lista de productos</h1>
+        <div id="listaProductos">
+        </div>
+      </section>                                                                  <!-- This class is addded -->
+    </main>
+    
 
-      </div>
-    </div>
-
-    <script src="filtro.js"></script>                                          <!-- Addres coorrected -->
+    <script src="filtro.js"></script>                                              <!-- Addres coorrected -->
   </body>
 </html>
